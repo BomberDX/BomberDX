@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+
+<html>
+
+	<head>
+
+		<title>Javascript!!</title>
+
+		<script>
+			var counter = 0;
+			var helloWorldConditional = function() {
+				console.log("If the function runs this text will appear in the console!");
+				if (counter > 3) {
+					alert("I'm tired of saying hello!");
+					counter = 0;
+				} 
+                
+                else {
+					alert("Hello World!");
+					counter++;
+				}
+                
+                
+			}
+			var helloWorld = function() {
+				console.log("If the function runs this text will appear in the console!");
+				alert("Hello World!");    
+			}
+            
+            
+			var notAllowed = function() {
+				alert("
+Now, this is a story all about how
+My life got flipped-turned upside down
+And Ild like to take a minute
+Just sit right there
+Ill tell you how I became the prince of a town called Bel-Air
+
+In west Philadelphia born and raised
+On the playground was where I spent most of my days
+Chillin out maxin relaxin all cool
+And all shooting some b-ball outside of the school
+When a couple of guys who were up to no good
+Started making trouble in my neighborhood
+I got in one little fight and my mom got scared
+She said Youre movin with your auntie and uncle in Bel-Air
+
+I begged and pleaded with her day after day
+But she packed my suitcase and sent me on my way
+She gave me a kiss and then she gave me my ticket.
+I put my Walkman on and said, I might as well kick it.
+
+First class, yo this is bad
+Drinking orange juice out of a champagne glass.
+Is this what the people of Bel-Air living like?
+Hmm this might be alright.
+
+But wait I hear theyre prissy, bourgeois, all that
+Is this the type of place that they just send this cool cat?
+I dont think so
+Ill see when I get there
+I hope theyre prepared for the prince of Bel-Air
+
+Well, the plane landed and when I came out
+There was a dude who looked like a cop standing there with my name out
+I aint trying to get arrested yet
+I just got here
+I sprang with the quickness like lightning, disappeared
+
+I whistled for a cab and when it came near
+The license plate said fresh and it had dice in the mirror
+If anything I could say that this cab was rare
+But I thought Nah, forget it - Yo, home to Bel-Air
+
+I pulled up to the house about 7 or 8
+And I yelled to the cabbie Yo home smell ya later
+I looked at my kingdom
+I was finally there
+To sit on my throne as the Prince of Bel-Air");
+				window.close();
+			}
+            
+            
+			var annoying = function() {
+				alert("heyheyheyheyheyhey");
+			}
+            
+            
+		</script>
+
+	</head>
+
+	<body onmouseover = "annoying()">
+		<button type="button" onclick="helloWorld()">Hello World</button>
+		<p oncopy = "notAllowed()">This is an amazing secret...don't tell anyone!</p>
+		<button type="button" onclick="helloWorldConditional()">Hello World</button>
+	</body>
+
+</html>
